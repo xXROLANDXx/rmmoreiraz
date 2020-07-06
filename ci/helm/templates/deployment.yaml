@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: presentacion
+  name: rmmoreiraz
   namespace: {{ .Release.Namespace }}
 spec:
   replicas: 1
@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: presentacion
+        app: rmmoreiraz
     spec:
       securityContext:
         runAsUser: 0
